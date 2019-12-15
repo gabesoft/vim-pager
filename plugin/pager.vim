@@ -24,6 +24,7 @@ function! pager#enable() abort " {{{
   setlocal nolist nospell nocursorline
   setlocal readonly nomodifiable
   setlocal nomodified
+  set filetype=man
   nnoremap <buffer><silent> <Plug>(pager-close) :<C-u>q<CR>
   nmap <buffer> q <Plug>(pager-close)
 endfunction " }}}
